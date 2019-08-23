@@ -1,0 +1,563 @@
+/* PC样式 */
+
+.h-h2 {
+    font-size: 26px;
+    line-height: 150%;
+    color: #159185;
+    padding: 0 0 20px 0;
+    margin: 0 0 40px 0;
+    border-bottom: #e5e5e5 solid 1px;
+    background: none;
+}
+
+.h-h2 span {
+    font-style: italic;
+    margin-right: 12px;
+}
+
+.h2-white {
+    color: #fff;
+}
+
+.gp-jianju {
+    padding: 30px 0;
+}
+
+.carousel .act {
+    background-color: #1cab43;
+}
+
+
+/* 轮播 */
+
+.banner1 img {
+    width: 100%;
+    height: 100%;
+}
+
+.banner1 {
+    width: 100%;
+    height: 430px;
+}
+
+
+/* 广告 */
+
+.advert {
+    width: 100%;
+    height: 270px;
+}
+
+.advert img {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel {
+    height: 570px;
+    position: relative;
+    /* overflow: hidden; */
+}
+
+.carousel img {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.carousel ol {
+    /* width: 60px; */
+    padding: 0;
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    margin-left: -30px;
+}
+
+.carousel ol li {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 8px;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.more {
+    /* display: block; */
+    padding: 12px 30px;
+    border: 2px solid #1cab43;
+    color: #1cab43;
+    text-decoration: none;
+}
+
+.more:hover {
+    background: #1cab43;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* 轮播 */
+
+
+/* 产品中心 */
+
+.imain1 {
+    clear: both;
+    margin: 0 auto;
+    width: 100%;
+    padding-bottom: 30px;
+    overflow: hidden;
+    height: 500px;
+}
+
+.imain1 dl {
+    float: left;
+    width: 360px;
+    margin: 0 20px;
+}
+
+.imain1 ul,
+ol {
+    padding-left: 0;
+    list-style: none;
+}
+
+.imain1 dl dt {
+    clear: both;
+    text-align: center;
+}
+
+.imain1 dl dt img {
+    border-radius: 50%;
+    border: 5px solid #02bc4d;
+}
+
+.imain1 dl dd {
+    clear: both;
+    font-size: 14px;
+    line-height: 24px;
+    color: #818181;
+    text-align: center;
+}
+
+.imain1 dl dd strong {
+    clear: both;
+    color: #3d3d3d;
+    line-height: 28px;
+    font-size: 15px;
+}
+
+.magic-tab-head {
+    width: 1150px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.magic-tab-head ul li {
+    float: left;
+    width: 175px;
+    margin-left: 13px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    height: 58px;
+    line-height: 58px;
+}
+
+.magic-tab-head li {
+    display: block;
+    margin-left: 0;
+    background: linear-gradient(to right, #06c03f, #3aba91);
+    width: 175px;
+    height: 58px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.magic-tab-head li a {
+    color: #fff;
+}
+
+.magic-tab-head ul .on {
+    color: #fff;
+    background: linear-gradient(to right, #224bbe, #4079df);
+}
+
+.magic-tab-body ul {
+    float: left;
+    width: 1150px;
+}
+
+.magic-tab-body li {
+    float: left;
+    width: 260px;
+    margin-right: 30px;
+    padding: 10px 10px 20px 10px;
+}
+
+.magic-tab-body ul li>a {
+    display: block;
+    width: 260px;
+    height: 210px;
+}
+
+.magic-tab-body ul li>a img {
+    width: 100%;
+    height: 100%;
+}
+
+.magic-tab-body li:hover {
+    background: #f3f3f3;
+    transition: all .8s;
+}
+
+.magic-tab-body li .biaoti {
+    text-align: center;
+    font-size: 18px;
+    line-height: 42px;
+    margin: 10px 0px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.magic-tab-body li p {
+    font-size: 14px;
+    color: #939393;
+    text-indent: 2em;
+}
+
+.magic-tab-body li .more {
+    font-size: 14px;
+    /* background: url(images/more.png) left no-repeat; */
+    margin-top: 10px;
+    text-align: center;
+}
+
+.magic-tab-body li .more a {
+    color: #026dc8;
+    /* padding-left: 30px; */
+}
+
+.magic-tab-body li .more a:hover {
+    color: #ff0001;
+}
+
+.magic-tab-body ul li p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+
+.magic-info-title {
+    font-size: 18px;
+    width: 175px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.magic-info-title a:hover {
+    color: #2f82ff;
+}
+
+
+/* 关于我们 */
+
+.about {
+    background: url(../../picture/lc-bg.jpg);
+}
+
+.about .container>div img {
+    height: 100%;
+    width: 100%;
+}
+
+.about .container>div h3 {
+    margin-top: 8px;
+}
+
+.about p {
+    text-indent: 2em;
+    /* color: #fff; */
+    line-height: 24px;
+}
+
+
+/* 工程案例 */
+
+.one {
+    margin: 50px auto;
+    height: 360px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 0;
+}
+
+.one ul {
+    height: 360px;
+    width: 10000px;
+    position: absolute;
+    left: 0;
+}
+
+
+/*ul width的宽不能过小*/
+
+.one ul li {
+    width: 350px;
+    display: block;
+    float: left;
+    margin: 5px;
+    height: 350px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.one ul li a {
+    display: inline-block;
+    height: 350px;
+}
+
+.one ul li img {
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.one ul li a span {
+    height: 0;
+    display: block;
+    background: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    font-size: 0px;
+}
+
+.one ul li a:hover span {
+    height: 350px;
+    line-height: 350px;
+    font-size: 20px;
+    text-align: center;
+    transition: all 0.7s;
+}
+
+
+/* 新闻中心 */
+
+.news h3 {
+    padding-left: 12px;
+    border-left: 5px solid #159185;
+}
+
+.news ul li {
+    /* width: 100%; */
+    line-height: 36px;
+}
+
+
+/* 尾部 */
+
+.footer {
+    background: url(../picture/gp-bg.jpg);
+}
+
+.footer a {
+    color: lemonchiffon;
+}
+
+.footer .row>div>ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer h2 {
+    font-size: 20px;
+}
+
+.footer .friendlink li {
+    float: left;
+    margin-right: 8px;
+    line-height: 24px;
+}
+
+.footer .friendlink li a {
+    color: #777777;
+}
+
+.footer .about-us li {
+    color: #777777;
+}
+
+.footer .wechat p {
+    color: #777;
+    padding-top: 8px;
+}
+
+.footer .copyright {
+    color: #fff;
+    padding-top: 20px;
+}
+
+
+/* 侧边栏 */
+
+.side {
+    position: fixed;
+    width: 54px;
+    height: 275px;
+    right: 0;
+    bottom: 120px;
+    z-index: 100;
+}
+
+.side ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+.side ul li {
+    width: 54px;
+    height: 54px;
+    float: left;
+    position: relative;
+    border-bottom: 1px solid #444;
+}
+
+.side ul li .sidebox {
+    position: absolute;
+    width: 54px;
+    height: 54px;
+    top: 0px;
+    right: 0px;
+    opacity: 0.8;
+    color: rgb(255, 255, 255);
+    transition: all 0.3s ease 0s;
+    font: 14px/54px 微软雅黑;
+    overflow: hidden;
+}
+
+.side ul li img {
+    float: left;
+    /* width: 48px;
+    height: 48px; */
+}
+
+.side .sidebox {
+    position: relative;
+    width: 54px;
+    opacity: 0.8;
+    background: rgb(0, 0, 0);
+}
+
+.sidebox .side-hover {
+    position: absolute;
+    top: -33%;
+    left: -200%;
+    background: rgb(0, 0, 0);
+    display: none;
+}
+
+.side li:nth-child(1):hover .sidebox {
+    width: 124px;
+}
+
+.side li:nth-child(2):hover .sidebox {
+    width: 150px;
+}
+
+.side li:nth-child(3) .sidebox {
+    overflow: visible;
+}
+
+.side li:nth-child(3):hover .side-hover {
+    display: block;
+}
+
+
+/* 平板样式 */
+
+@media (max-width: 1199px) and (min-width: 992px) {
+    .carousel {
+        height: 594px;
+    }
+}
+
+
+/* 中间样式 */
+
+@media (max-width: 991px) and (min-width: 768px) {
+    .carousel {
+        height: 454px;
+    }
+    .row>div {
+        padding: 0 25px;
+        margin: 2% auto;
+        /* float: none; */
+    }
+}
+
+
+/* Phone样式 */
+
+@media (max-width: 767px) {
+    .menu li {
+        width: 200px;
+        background-color: #293a2a;
+    }
+    .carousel {
+        height: 454px;
+    }
+    .carousel img {
+        width: 100%;
+        height: 100%;
+    }
+    .h-h2 span {
+        display: none;
+    }
+    /* .product-list div {
+        padding: 0 30px;
+        margin: 4% auto;
+        float: none;
+    } */
+    .row>div {
+        padding: 0 25px;
+        margin: 4% auto;
+        float: none;
+    }
+}
+
+
+/* 文章样式 */
+
+@media (min-width: 1200px) {
+    .gp-news {
+        height: 159px;
+        min-height: 159px;
+    }
+    .gp-news a img {
+        max-height: 146px !important;
+        max-width: 200px !important
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .gp-news {
+        min-height: 159px
+    }
+}
+
+.gp-news .pic-link {
+    margin-right: 20px;
+}
+
+@media (min-width: 999px) {}

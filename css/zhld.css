@@ -1,0 +1,147 @@
+.functebox {
+    /* background: #fafafa; */
+    position: relative;
+    overflow: hidden;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.combina {
+    position: relative;
+    text-align: center;
+    height: 1200px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.combina>img {
+    display: block;
+    margin: auto;
+    position: relative;
+    left: -24px;
+    z-index: 16;
+}
+
+.combinlist {
+    width: 100%;
+    height: 740px;
+    position: absolute;
+    left: 0;
+    top: 100px;
+    z-index: 20;
+}
+
+.combinlist li {
+    float: left;
+    width: 50%;
+    margin-left: 28px;
+    margin-top: 10px;
+}
+
+.combinlist li a {
+    display: block;
+    padding: 15px;
+    width: 262px;
+    position: relative;
+}
+
+.combinlist li .txt {
+    color: #646464;
+    font-size: 12px;
+    margin-top: 10px;
+    height: 80px;
+    overflow: hidden;
+    text-align: left;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.34s;
+    transform: translateY(14px);
+    -webkit-transform: translateY(14px);
+    -moz-transform: translateY(14px);
+    text-align: left;
+}
+
+.combinlist li:nth-child(2n+2) {
+    float: right;
+    width: 276px;
+    margin-left: 0;
+}
+
+.combinlist li.act {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+}
+
+.combinlist li b {
+    display: block;
+    width: 62px;
+    height: 62px;
+    border: 1px solid #bfbfbf;
+    border-radius: 8px;
+    float: left;
+    transition: 350ms;
+    position: relative;
+}
+
+.combinlist li b img {
+    display: block;
+    max-width: 60%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.combinlist li b img.hide {
+    display: none;
+}
+
+.combinlist li span {
+    display: block;
+    float: left;
+    line-height: 64px;
+    color: #333;
+    font-size: 22px;
+    margin-left: 20px;
+    transition: 320ms;
+}
+
+.combinlist li:nth-child(1),
+.combinlist li:nth-child(2) {
+    margin-top: 0;
+}
+
+.combinlist li a:hover {
+    background: #fff;
+}
+
+.combinlist li a:hover span {
+    color: #005992;
+}
+
+.combinlist li a:hover b {
+    border-color: #005992;
+    background: #005992;
+}
+
+.combinlist li a:hover b img.show {
+    display: none !important;
+}
+
+.combinlist li a:hover b img.hide {
+    display: block !important;
+}
+
+.combinlist li a:hover .txt {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+}

@@ -1,0 +1,74 @@
+.detailed .col-lg-9 h3{
+	text-align: center;
+}
+.detailed .col-lg-9 h4{
+	color: #edad0e;
+	margin-top: 20px;
+}
+.detailed .col-lg-9 table td,th{
+	text-align: center;
+}
+.detailed .col-lg-9 p{
+	line-height: 24px;
+	text-indent: 2em;
+}
+.detailed .col-lg-9 a{
+	margin-bottom: 20px;
+}
+.detailed .col-lg-9 .left{
+	float: left
+}
+.detailed .col-lg-9 .right{
+	float: right;
+}
+/*新闻子网页阅读更多的样式*/
+
+.detailed .col-lg-9 .read_style{
+   text-align: center;
+   margin:auto 0px;
+   text-align: left;
+   padding-top:20px;
+}
+.detailed .col-lg-9 .read_style h5{
+	text-align: left;
+	font-size:14px;
+}
+.detailed .col-lg-9 .read_style h4{
+	text-align: center;
+}
+.detailed .col-lg-9 .read_style .xinxi{
+	width:300px;
+	height:20px;
+	background:#eee;
+	color:#fff;
+	font-size:12px;
+	text-align: center;
+	line-height:20px;
+	margin:0 auto;
+}
+/*上下篇设置*/
+.detailed .col-lg-9 .read_footer{
+	height:20px;
+	line-height:20px;
+	font-size:14px;
+	margin-top: 20px;
+	
+}
+.detailed .col-lg-9 .read_footer p:nth-child(1){
+	float:left;
+
+}
+.detailed .col-lg-9 .read_footer p:nth-child(2){
+	float:right;
+}
+.detailed .col-lg-9 .fenxiang {
+	text-align:left;
+	float:right;
+	font-size:12px;
+	margin-top:30px;
+	margin-bottom:20px;
+}
+.detailed .col-lg-9 .fenxiang span{
+	color:red;
+	font-size:14px;
+}

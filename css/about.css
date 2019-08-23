@@ -1,0 +1,58 @@
+.banner {
+    width: 100%;
+    height: 570px;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+}
+
+@media(max-width: 1199px) and (min-width: 992px) {
+    .banner {
+        height: 460px;
+    }
+}
+
+
+/* banner end */
+.about .img img{
+    float: left;
+    width: 50%;
+    margin:20px;
+}
+.about .row p{
+    line-height: 24px;
+}
+.ngt {
+    line-height: 200%;
+    background-color: #f7f7f7;
+    /*border-bottom: 1px solid #ededed; */
+}
+
+.ngt ol {
+    margin-bottom: 0px;
+}
+
+.work_list {
+    border-bottom: 1px #f0f0f0 solid;
+}
+
+.work_list h4 {
+    font-weight: bold;
+}
+
+.work_list p {
+    text-indent: 2em;
+    line-height: 24px;
+}
+
+.work_list .img {
+    margin-top: 60px;
+}
+
+@media (max-width: 767px) {
+    .work_list .img {
+        margin-top: 0;
+    }
+}

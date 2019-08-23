@@ -1,0 +1,574 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>保定光谱电子有限责任公司</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <script src="js/jquery.mousewheel.min.js"></script>
+</head>
+
+<body>
+    <!--导航-->
+    <div class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+
+                <!-- .navbar-toggle样式用于toggle收缩的内容，即nav-collapse collapse样式所在元素 -->
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <span class="sr-only"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+                <!-- 确保无论是宽屏还是窄屏，navbar-brand都显示 -->
+                <a href="##" class="navbar-brand"><img src="images/logo.fw.png" alt=""></a>
+            </div>
+            <!-- 屏幕宽度小于768px时，div.navbar-responsive-collapse容器里的内容都会隐藏，显示icon-bar图标，当点击icon-bar图标时，再展开。屏幕大于768px时，默认显示。 -->
+            <div class="collapse navbar-collapse navbar-responsive-collapse pull-right">
+                <ul class="nav navbar-nav text-center menu">
+                    <li class="active"><a href="index.html">网站首页</a></li>
+                    <li><a href="zhld/zhld.html">智慧路灯</a></li>
+                    <li><a href="about/about.html">关于光谱</a></li>
+                    <li><a href="product/product.html">产品中心</a></li>
+                    <li><a href="case/case.html">相关案例</a></li>
+                    <li><a href="news/news.html">新闻资讯</a></li>
+                    <li><a href="contact/contact.html">联系我们</a></li>
+                    <li class="visible-lg">
+                        <input type="search" name="" id="input" placeholder="太阳能路灯、智慧路灯" class="form-control visible-lg pull-left" value="" required="required" style="margin-top:8px;width:200px;margin-right:12px;">
+                        <button type="button" class="btn btn-large btn-block btn-success" style="width: 80px;margin-top: 8px;">搜索</button>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+    <!--banner-->
+    <div class="banner">
+        <div class="carousel">
+            <img src="picture/gp-banner1.jpg" alt="" style="display: block;">
+            <img src="picture/gp-banner2.jpg" alt="">
+            <img src="picture/gp-banner3.jpg" alt="">
+            <ol>
+            </ol>
+        </div>
+    </div>
+    <script>
+        $(function() {
+            console.log($(".carousel>img").length);
+            // var x = ;
+            for (i = 0; i < $(".carousel>img").length; i++) {
+                $(".carousel ol").append("<li></li>");
+            }
+            $('.carousel ol li').eq(0).addClass('act');
+        })
+    </script>
+    <script>
+        $(function() {
+            var index = 0;
+            var timer = setInterval(function() {
+                index++;
+                index = index == $(".carousel>img").length ? 0 : index;
+                $(".carousel>img").eq(index).show().siblings("img").hide();
+                $(".carousel ol li").eq(index).addClass("act").siblings("li").removeClass("act");
+            }, 2500);
+            $(".carousel ol li").mouseenter(function() {
+                var num = $(this).index();
+                $(".carousel>ol>li").eq(num).addClass("act").siblings("li").removeClass("act");
+                $(".carousel>img").eq(num).show().siblings("img").hide();
+            });
+            $("goTop").click(function() {
+                $('body').animate({
+                    scrollTop: '0'
+                }, 1000);
+                return false; //防止默认事件行为
+            })
+        })
+    </script>
+    <!-- 产品中心 -->
+    <section class="product gp-jianju">
+        <div class="container">
+            <h2 class="h-h2 text-center"><span>NO.1</span>产品中心</h2>
+            <div class="imain1">
+                <script type="text/javascript" src="js/jquery.SuperSlide.2.1.3.js"></script>
+                <div class="magic-tab">
+                    <div class="wow fadeInLeft" style="visibility: visible; animation-name: fadeInLeft;">
+                        <div class="hd magic-tab-head">
+                            <ul class="list-unstyled">
+                                <li class="on "><a href="product/promid3.html" id="productmidid3" title="智慧路灯">智慧路灯</a></li>
+                                <ol id="productsmalllist3">
+                                </ol>
+                                <li><a href="product/promid1.html" id="productmidid1" title="太阳能路灯">太阳能路灯</a></li>
+                                <ol id="productsmalllist1">
+                                </ol>
+                                <li><a href="product/prosid5.html" id="productmidid5" title="LED路灯">LED路灯</a></li>
+                                <ol id="productsmalllist5">
+                                </ol>
+                                <li><a href="product/promid2.html" id="productmidid2" title="太阳能中华灯">太阳能中华灯</a></li>
+                                <ol id="productsmalllist2">
+                                </ol>
+                                <li><a href="product/promid4.html" id="productmidid4" title="庭院灯">太阳能庭院灯</a></li>
+                                <ol id="productsmalllist4">
+                                </ol>
+                                <li><a href="product/prosid16.html" id="productmidid6" title="风光互补路灯">风光互补路灯</a></li>
+                                <ol id="productsmalllist6">
+                                </ol>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="wow fadeInRight" style="visibility: visible; animation-name: fadeInRight;">
+                        <div class="tempWrap" style="overflow:hidden; position:relative; width:1400px">
+                            <div class="bd magic-tab-body" style="width: 8400px; left: 0px; position: relative; overflow: hidden; padding: 0px; margin: 0px;">
+                                <ul style="float: left; width: 1400px;">
+                                    <li>
+                                        <a href="product/product49.html" target="_blank"><img src="images/gpzzld1.jpg" title="智慧路灯" class="imgborder"> </a>
+                                        <div class="biaoti"><a href="product/product49.html" title="智慧路灯-GP-A001" target="_blank">智慧路灯-GP-A001</a></div>
+                                        <p>独特光学和散热结构设计，保证灯具高效、可靠的工作； 8M/12M/14M 多种方案自由搭配；智能调光、WIFI 基站、环境监测、视频监控、一键求助、视频播放、汽车充电、公共设施监控等多功能集成新型智慧灯杆，通过整合智慧照明、智能视频分析、智能充电管理等智慧城市功能，通过统一的物联网网关及平台，形成智慧城市的一体化感知载体。
+                                        </p>
+                                        <div class="more"><a href="product/product49.html">查看详细信息</a></div>
+                                    </li>
+                                    <li>
+                                        <a href="product/product48.html" target="_blank"><img src="images/gpzzld2.jpg" title="智慧路灯" class="imgborder"> </a>
+                                        <div class="biaoti"><a href="product/product48.html" title="智慧路灯-GP-A002" target="_blank">智慧路灯-GP-A002</a></div>
+                                        <p>独特光学和散热结构设计，保证灯具高效、可靠的工作； 8M/12M/14M 多种方案自由搭配；智能调光、WIFI 基站、环境监测、视频监控、一键求助、视频播放、汽车充电、公共设施监控等多功能集成新型智慧灯杆，通过整合智慧照明、智能视频分析、智能充电管理等智慧城市功能，通过统一的物联网网关及平台，形成智慧城市的一体化感知载体。
+                                        </p>
+                                        <div class="more"><a href="product/product48.html">查看详细信息</a></div>
+                                    </li>
+                                    <li>
+                                        <a href="product/product47.html" target="_blank"><img src="images/gpzzld3.jpg" title="智慧路灯" class="imgborder"> </a>
+                                        <div class="biaoti"><a href="product/product47.html" title="智慧路灯-GP-A003" target="_blank">智慧路灯-GP-A003</a></div>
+                                        <p>独特光学和散热结构设计，保证灯具高效、可靠的工作； 8M/12M/14M 多种方案自由搭配；智能调光、WIFI 基站、环境监测、视频监控、一键求助、视频播放、汽车充电、公共设施监控等多功能集成新型智慧灯杆，通过整合智慧照明、智能视频分析、智能充电管理等智慧城市功能，通过统一的物联网网关及平台，形成智慧城市的一体化感知载体。
+                                        </p>
+                                        <div class="more"><a href="product/product47.html">查看详细信息</a></div>
+                                    </li>
+                                    <li>
+                                        <a href="product/product46.html" target="_blank"><img src="images/gpzzld4.jpg" title="智慧路灯" class="imgborder"> </a>
+                                        <div class="biaoti"><a href="product/product46.html" title="智慧路灯-GP-A004" target="_blank">智慧路灯-GP-A004</a></div>
+                                        <p>独特光学和散热结构设计，保证灯具高效、可靠的工作； 8M/12M/14M 多种方案自由搭配；智能调光、WIFI 基站、环境监测、视频监控、一键求助、视频播放、汽车充电、公共设施监控等多功能集成新型智慧灯杆，通过整合智慧照明、智能视频分析、智能充电管理等智慧城市功能，通过统一的物联网网关及平台，形成智慧城市的一体化感知载体。
+                                        </p>
+                                        <div class="more"><a href="product/product46.html">查看详细信息</a></div>
+                                    </li>
+                                </ul>
+                                <ul style="float: left; width: 1400px;">
+                                    <li>
+                                        <a href="product/product158.html" target="_blank"><img src="images/gptyn1.jpg" title="太阳能路灯-GP-A001" class="imgborder"> </a>
+                                        <div class="biaoti"><a href="product/product158.html" title="太阳能路灯-GP-A001" target="_blank">太阳能路灯-GP-A001</a></div>
+                                        <p>
+                                            太阳能路灯系统是一套独立的分散式供电系 统，不受地域限制(因各地区光照度不一样，寿命及效果可能也不一样，理论参数仅供参考），不需要开挖路面做布线埋管施工，现场施工和安装都很方便，更不需 要输变电系统，也不需要消耗市电，既环保又节能，综合经济效益好，特别是对已建成的道路增设 太阳能路灯非常的方便。尤其在远离电网的道路灯、户外广告牌、公交站台上应用，其经济效益更加明显。</p>
+                                        <div class="more"><a href="product/product158.html">查看详细信息</a></div>
+                                    </li>
+                                    <li>
+                                        <a href="product/product154.html" target="_blank"><img src="images/gptyn2.jpg" title="太阳能路灯-GP-A002" class="imgborder"> </a>
+                                        <div class="biaoti"><a href="product/product154.html" title="太阳能路灯-GP-A002" target="_blank">太阳能路灯-GP-A002</a></div>
+                                        <p>太阳能路灯系统是一套独立的分散式供电系 统，不受地域限制(因各地区光照度不一样，寿命及效果可能也不一样，理论参数仅供参考），不需要开挖路面做布线埋管施工，现场施工和安装都很方便，更不需 要输变电系统，也不需要消耗市电，既环保又节能，综合经济效益好，特别是对已建成的道路增设 太阳能路灯非常的方便。尤其在远离电网的道路灯、户外广告牌、公交站台上应用，其经济效益更加明显。</p>
+                                        <div class="more"><a href="product/product154.html">查看详细信息</a></div>
+                                    </li>
+                                    <li>
+                                        <a href="product/product54.html" target="_blank"><img src="images/gptyn3.jpg" title="太阳能路灯-GP-A003" class="imgborder"> </a>
+                                        <div class="biaoti"><a href="product/product54.html" title="太阳能路灯-GP-A003" target="_blank">太阳能路灯-GP-A003</a></div>
+                                        <p>
+                                            太阳能路灯系统是一套独立的分散式供电系 统，不受地域限制(因各地区光照度不一样，寿命及效果可能也不一样，理论参数仅供参考），不需要开挖路面做布线埋管施工，现场施工和安装都很方便，更不需 要输变电系统，也不需要消耗市电，既环保又节能，综合经济效益好，特别是对已建成的道路增设 太阳能路灯非常的方便。尤其在远离电网的道路灯、户外广告牌、公交站台上应用，其经济效益更加明显。
+                                        </p>
+                                        <div class="more"><a href="product/product54.html">查看详细信息</a></div>
+                                    </li>
+                                    <li>
+                                        <a href="product/product51.html" target="_blank"><img src="images/gptyn4.jpg" title="太阳能路灯-GP-A004" width="280" height="210" class="imgborder"> </a>
+                                        <div class="biaoti"><a href="product/product51.html" title="太阳能路灯-GP-A004" target="_blank">太阳能路灯-GP-A004</a></div>
+                                        <p>
+                                            太阳能路灯系统是一套独立的分散式供电系 统，不受地域限制(因各地区光照度不一样，寿命及效果可能也不一样，理论参数仅供参考），不需要开挖路面做布线埋管施工，现场施工和安装都很方便，更不需 要输变电系统，也不需要消耗市电，既环保又节能，综合经济效益好，特别是对已建成的道路增设 太阳能路灯非常的方便。尤其在远离电网的道路灯、户外广告牌、公交站台上应用，其经济效益更加明显。
+                                        </p>
+                                        <div class="more"><a href="product/product51.html">查看详细信息</a></div>
+                                    </li>
+                                </ul>
+                                <ul style="float: left; width: 1400px;">
+                                    <li>
+                                        <a href="product/product73.html" target="_blank"><img src="images/gp-led1.jpg" title="LED路灯" class="imgborder"> </a>
+                                        <div class="biaoti"><a href="product/product73.html" title="#" target="_blank">LED路灯</a></div>
+                                        <p>
+                                            这款双臂led路灯，灯杆、灯具部分都是蓝白两色，蓝白相间是的整个led路灯的色调显得平和，主杆是比较常规的圆锥杆，上端双臂展开，配上蓝白的主基调，很容易让人联想到海上的海鸥在展翅翱翔。没有夸张的展现，就是简简单单，祥和而又不失优雅。</p>
+                                        <div class="more"><a href="product/product73.html">查看详细信息</a></div>
+                                    </li>
+                                    <li>
+                                        <a href="product/product73.html" target="_blank"><img src="images/gp-led1.jpg" title="LED路灯" class="imgborder"> </a>
+                                        <div class="biaoti"><a href="product/product73.html" title="#" target="_blank">LED路灯</a></div>
+                                        <p>
+                                            这款双臂led路灯，灯杆、灯具部分都是蓝白两色，蓝白相间是的整个led路灯的色调显得平和，主杆是比较常规的圆锥杆，上端双臂展开，配上蓝白的主基调，很容易让人联想到海上的海鸥在展翅翱翔。没有夸张的展现，就是简简单单，祥和而又不失优雅。</p>
+                                        <div class="more"><a href="product/product73.html">查看详细信息</a></div>
+                                    </li>
+                                    <li>
+                                        <a href="product/product73.html" target="_blank"><img src="images/gp-led1.jpg" title="LED路灯" class="imgborder"> </a>
+                                        <div class="biaoti"><a href="product/product73.html" title="#" target="_blank">LED路灯</a></div>
+                                        <p>
+                                            这款双臂led路灯，灯杆、灯具部分都是蓝白两色，蓝白相间是的整个led路灯的色调显得平和，主杆是比较常规的圆锥杆，上端双臂展开，配上蓝白的主基调，很容易让人联想到海上的海鸥在展翅翱翔。没有夸张的展现，就是简简单单，祥和而又不失优雅。</p>
+                                        <div class="more"><a href="product/product73.html">查看详细信息</a></div>
+                                    </li>
+                                    <li>
+                                        <a href="product/product73.html" target="_blank"><img src="images/gp-led1.jpg" title="LED路灯" class="imgborder"> </a>
+                                        <div class="biaoti"><a href="product/product73.html" title="#" target="_blank">LED路灯</a></div>
+                                        <p>
+                                            这款双臂led路灯，灯杆、灯具部分都是蓝白两色，蓝白相间是的整个led路灯的色调显得平和，主杆是比较常规的圆锥杆，上端双臂展开，配上蓝白的主基调，很容易让人联想到海上的海鸥在展翅翱翔。没有夸张的展现，就是简简单单，祥和而又不失优雅。</p>
+                                        <div class="more"><a href="product/product73.html">查看详细信息</a></div>
+                                    </li>
+                                </ul>
+                                <ul style="float: left; width: 1400px;">
+                                    <li>
+                                        <a href="product/product27.html" target="_blank"><img src="images/gpzhd1.jpg" title="保定光谱中华灯" class="imgborder"> </a>
+                                        <div class="biaoti"><a href="product/product27.html" title="保定光谱中华灯" target="_blank">中华灯</a></div>
+                                        <p>中华灯的整体造型折射中国的古典传统文化，蕴意厚重的中国古老文明，适用于政府大门口，工厂门口。他代表庄严，代表权利，代表神圣不可侵犯，更重要的或许中华灯能赶走牛鬼蛇神！！能带来好的运气！！
+                                        </p>
+                                        <div class="more"><a href="product/product27.html">查看详细信息</a></div>
+                                    </li>
+                                    <li>
+                                        <a href="product/product27.html" target="_blank"><img src="images/gpzhd1.jpg" title="保定光谱中华灯" class="imgborder"> </a>
+                                        <div class="biaoti"><a href="product/product27.html" title="保定光谱中华灯" target="_blank">中华灯</a></div>
+                                        <p>中华灯的整体造型折射中国的古典传统文化，蕴意厚重的中国古老文明，适用于政府大门口，工厂门口。他代表庄严，代表权利，代表神圣不可侵犯，更重要的或许中华灯能赶走牛鬼蛇神！！能带来好的运气！！
+                                        </p>
+                                        <div class="more"><a href="product/product27.html">查看详细信息</a></div>
+                                    </li>
+                                    <li>
+                                        <a href="product/product27.html" target="_blank"><img src="images/gpzhd1.jpg" title="保定光谱中华灯" class="imgborder"> </a>
+                                        <div class="biaoti"><a href="product/product27.html" title="保定光谱中华灯" target="_blank">中华灯</a></div>
+                                        <p>中华灯的整体造型折射中国的古典传统文化，蕴意厚重的中国古老文明，适用于政府大门口，工厂门口。他代表庄严，代表权利，代表神圣不可侵犯，更重要的或许中华灯能赶走牛鬼蛇神！！能带来好的运气！！
+                                        </p>
+                                        <div class="more"><a href="product/product27.html">查看详细信息</a></div>
+                                    </li>
+                                    <li>
+                                        <a href="product/product27.html" target="_blank"><img src="images/gpzhd1.jpg" title="保定光谱中华灯" class="imgborder"> </a>
+                                        <div class="biaoti"><a href="product/product27.html" title="保定光谱中华灯" target="_blank">中华灯</a></div>
+                                        <p>中华灯的整体造型折射中国的古典传统文化，蕴意厚重的中国古老文明，适用于政府大门口，工厂门口。他代表庄严，代表权利，代表神圣不可侵犯，更重要的或许中华灯能赶走牛鬼蛇神！！能带来好的运气！！
+                                        </p>
+                                        <div class="more"><a href="product/product27.html">查看详细信息</a></div>
+                                    </li>
+                                    <li>
+                                        <a href="product/product27.html" target="_blank"><img src="images/gpzhd1.jpg" title="保定光谱中华灯" class="imgborder"> </a>
+                                        <div class="biaoti"><a href="product/product27.html" title="保定光谱中华灯" target="_blank">中华灯</a></div>
+                                        <p>中华灯的整体造型折射中国的古典传统文化，蕴意厚重的中国古老文明，适用于政府大门口，工厂门口。他代表庄严，代表权利，代表神圣不可侵犯，更重要的或许中华灯能赶走牛鬼蛇神！！能带来好的运气！！
+                                        </p>
+                                        <div class="more"><a href="product/product27.html">查看详细信息</a></div>
+                                    </li>
+                                </ul>
+                                <ul style="float: left; width: 1400px;">
+                                    <li>
+                                        <a href="product/product11.html" target="_blank"><img src="images/gptyd1.jpg" title="庭院灯" class="imgborder"> </a>
+                                        <div class="biaoti"><a href="product/product11.html" title="庭院灯" target="_blank">庭院灯</a></div>
+                                        <p>庭院灯其具有多样性、美观性具有美化和装饰环境的特点.一般应用于城市慢车道、窄车道、居民小区、旅游景区，公园、广场等公共场所的室外照明，能够延长人们的户外活动的时间，提高财产的安全</p>
+                                        <div class="more"><a href="product/product11.html">查看详细信息</a></div>
+                                    </li>
+                                    <li>
+                                        <a href="product/product11.html" target="_blank"><img src="images/gptyd1.jpg" title="庭院灯" class="imgborder"> </a>
+                                        <div class="biaoti"><a href="product/product11.html" title="庭院灯" target="_blank">庭院灯</a></div>
+                                        <p>庭院灯其具有多样性、美观性具有美化和装饰环境的特点.一般应用于城市慢车道、窄车道、居民小区、旅游景区，公园、广场等公共场所的室外照明，能够延长人们的户外活动的时间，提高财产的安全</p>
+                                        <div class="more"><a href="product/product11.html">查看详细信息</a></div>
+                                    </li>
+                                    <li>
+                                        <a href="product/product11.html" target="_blank"><img src="images/gptyd1.jpg" title="庭院灯" class="imgborder"> </a>
+                                        <div class="biaoti"><a href="product/product11.html" title="庭院灯" target="_blank">庭院灯</a></div>
+                                        <p>庭院灯其具有多样性、美观性具有美化和装饰环境的特点.一般应用于城市慢车道、窄车道、居民小区、旅游景区，公园、广场等公共场所的室外照明，能够延长人们的户外活动的时间，提高财产的安全</p>
+                                        <div class="more"><a href="product/product11.html">查看详细信息</a></div>
+                                    </li>
+                                </ul>
+                                <ul style="float: left; width: 1400px;">
+                                    <li>
+                                        <a href="product/product155.html" target="_blank"><img src="images/gpfdhb1.jpg" title="风电互补路灯" class="imgborder"> </a>
+                                        <div class="biaoti"><a href="product/product155.html" title="风电互补路灯" target="_blank">风电互补路灯</a></div>
+                                        <p>免除电缆铺线工程，无需大量供电设施建设；个别损坏不影响全局，不受大面积停电影响，智能控制，免除人工操作，施工简单，维护方便。</p>
+                                        <div class="more"><a href="product/product155.html">查看详细信息</a></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script type="text/javascript">
+                jQuery(".magic-tab").slide({
+                    effect: "left",
+                    autoPlay: false,
+                    delayTime: 500
+                });
+            </script>
+        </div>
+    </section>
+    <section class="advert">
+        <img src="images/12.jpg" alt="">
+    </section>
+    <!-- 关于我们 -->
+    <section class="about gp-jianju">
+        <div class="container">
+            <h2 class="h-h2 text-center"><span>NO.2</span>关于我们</h2>
+            <div class="col-lg-6 text-center">
+                <img src="images/about.jpg" alt="">
+            </div>
+            <div class="col-lg-6">
+                <h3>公司简介</h3>
+                <p>光谱电子科技有限公司国内销售总公司位于国家电谷——河北保定高开区，它是国内唯一的国家级新能源与能源设备基地，在光伏产业和风电产业方面它在全国处于独占熬头的地位，而且在输变电设备和储能设备产业方面它也在全国处于首屈一指的位置。而同时光谱电子的光电事业部十年来致力于太阳能路灯的研发。光谱电子国内销售总公司以此专业LED光源生产和国家电谷的天然优势为依托，将固态发光新材料和现代新能源应用结合起来，研发和推广实用新型的高科技的太阳能路灯、LED路灯、太阳能庭院灯、太阳能草坪灯、太阳能LED路灯组件、太阳能高杆灯等现代绿色照明产品推动国家照明行业的国际化进程，为世界和人类的可持续发展贡献力量。</p>
+                <p>光谱电子科技有限公司国内销售总公司一直立足于“以人为本，科技创新”的经营理念，深度开发中高档LED衍生产品，同时始终贯彻“高效、时效、务时、诚信、发展”的企业经营方针、服务于广大客户，用高品质的产品赢得客户的依赖，以完善的服务得到客户的满意。</p>
+                <p>我公司为广大业界朋友提供太阳能路灯，LED路灯灯头，太阳能庭院灯光源，LED光源、太阳能草坪灯，LED室内灯，LED埋地灯，LED景观灯，LED彩带，风能LED路灯，风光互补LED路灯等LED系列产品。公司可根据客户需要，规划设计配置合理、性能优越的产品，真诚欢迎各界朋友的来电来函和来访。</p>
+            </div>
+        </div>
+    </section>
+    <!-- 案例中心 -->
+    <section class="case gp-jianju">
+        <div class="container">
+            <h2 class="h-h2 text-center"><span>NO.3</span>产品案列</h2>
+            <div class="one">
+                <ul class="list-unstyled" style="left: -688.5px;">
+                    <li>
+                        <a href="javascript:;"><img src="images/gp-case2.jpg" alt=""><span style="width: 100%;">天津新农村太阳能建设</span></a>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><img src="images/gp-case2.jpg" alt=""><span style="width: 100%;">天津新农村太阳能建设</span></a>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><img src="images/gp-case3.jpg" alt=""><span style="width: 100%;">天津新农村太阳能建设</span></a>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><img src="images/gp-case4.jpg" alt=""><span style="width: 100%;">天津新农村太阳能建设</span></a>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><img src="images/gp-case3.jpg" alt=""><span style="width: 100%;">天津新农村太阳能建设</span></a>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><img src="images/gp-case2.jpg" alt=""><span style="width: 240px;">天津新农村太阳能建设</span></a>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><img src="images/gp-case2.jpg" alt=""><span style="width: 240px;">天津新农村太阳能建设</span></a>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><img src="images/gp-case3.jpg" alt=""><span style="width: 240px;">天津新农村太阳能建设</span></a>
+                    </li>
+                </ul>
+            </div>
+            <script>
+                /* 有的浏览器第一次加载不会动画  刷新当前页面一次 可以不加的*/
+                function reurl() {
+                    url = location.href;
+                    var times = url.split("?");
+                    if (times[1] != 1) {
+                        url += "?1";
+                        self.location.replace(url);
+                    }
+                }
+                onload = reurl;
+                /* 有的浏览器第一次加载不会动画  刷新当前页面一次 */
+
+                $(document).ready(function() {
+                    var box0 = $(".one"),
+                        v0 = 1.5; //这里添加滚动的对象和其速率
+                    var box1 = $(".two"),
+                        v1 = 1;
+                    Rin(box0, v0);
+                    Rin(box1, v1);
+
+                    function Rin($Box, v) { //$Box移动的对象，v对象移动的速率
+                        var $Box_ul = $Box.find("ul"),
+                            $Box_li = $Box_ul.find("li"),
+                            $Box_li_span = $Box_li.find("span"),
+                            left = 0,
+                            s = 0,
+                            timer; //定时器
+
+                        $Box_li.each(function(index) {
+                            $($Box_li_span[index]).width($(this).width()); //hover
+                            s += $(this).outerWidth(true); //即要滚动的长度
+                        })
+
+                        window.requestAnimationFrame = window.requestAnimationFrame || function(Tmove) {
+                            return setTimeout(Tmove, 1200 / 60)
+                        };
+                        window.cancelAnimationFrame = window.cancelAnimationFrame || clearTimeout;
+
+                        if (s >= $Box.width()) { //如果滚动长度超出Box长度即开始滚动，没有的话就不执行滚动
+                            $Box_li.clone(true).appendTo($Box_ul);
+                            Tmove();
+
+                            function Tmove() {
+                                //运动是移动left  从0到-s;（个人习惯往左滚）
+                                left -= v;
+                                if (left <= -s) {
+                                    left = 0;
+                                    $Box_ul.css("left", left)
+                                } else {
+                                    $Box_ul.css("left", left)
+                                }
+                                timer = requestAnimationFrame(Tmove);
+                            }
+                            $Box_ul.hover(function() {
+                                cancelAnimationFrame(timer)
+                            }, function() {
+                                Tmove()
+                            })
+                        }
+
+                    }
+                })
+            </script>
+        </div>
+    </section>
+    <section class="advert">
+        <img src="images/12.jpg" alt="">
+    </section>
+    <!-- 新闻中心 -->
+    <section class="news gp-jianju">
+        <div class="container">
+            <h2 class="h-h2 text-center"><span>NO.4</span>新闻资讯</h2>
+            <div class="col-lg-6">
+                <h3><a href="news/news.html">公司新闻</a></h3>
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="news/newsa.html">中国照明行业未来发展的三大趋势</a><span class="pull-right">2019-08-16</span>
+                    </li>
+                    <li>
+                        <a href="news/newsa.html">中国照明行业未来发展的三大趋势</a><span class="pull-right">2019-08-16</span>
+                    </li>
+                    <li>
+                        <a href="news/newsa.html">中国照明行业未来发展的三大趋势</a><span class="pull-right">2019-08-16</span>
+                    </li>
+                    <li>
+                        <a href="news/newsa.html">中国照明行业未来发展的三大趋势</a><span class="pull-right">2019-08-16</span>
+                    </li>
+                    <li>
+                        <a href="news/newsa.html">中国照明行业未来发展的三大趋势</a><span class="pull-right">2019-08-16</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-6">
+                <h3><a href="news/hyxw.html">行业动态</a></h3>
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="#">中国照明行业未来发展的三大趋势</a><span class="pull-right">2019-08-16</span>
+                    </li>
+                    <li>
+                        <a href="#">中国照明行业未来发展的三大趋势</a><span class="pull-right">2019-08-16</span>
+                    </li>
+                    <li>
+                        <a href="#">中国照明行业未来发展的三大趋势</a><span class="pull-right">2019-08-16</span>
+                    </li>
+                    <li>
+                        <a href="#">中国照明行业未来发展的三大趋势</a><span class="pull-right">2019-08-16</span>
+                    </li>
+                    <li>
+                        <a href="#">中国照明行业未来发展的三大趋势</a><span class="pull-right">2019-08-16</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 尾部 -->
+    <div class="footer gp-jianju">
+        <div class="container">
+            <div class="row visible-lg">
+                <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2">
+                    <h5><a href="zhld/zhld.html">智慧路灯</a></h5>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2">
+                    <h5><a href="product/product.html">产品中心</a></h5>
+                    <ul>
+                        <li><a href="product/LEDsnd.html">LED室内灯</a></li>
+                        <li><a href="product/tyncpd.html">太阳能草坪灯</a></li>
+                        <li><a href="product/LEDjgd.html">LED景观灯</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2">
+                    <h5><a href="news/news.html">新闻资讯</a></h5>
+                    <ul>
+                        <li><a href="news/cjwt.html">常见问题</a></li>
+                        <li><a href="news/hyxw.html">行业动态</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2">
+                    <h5><a href="case/case.html">相关案例</a></h5>
+                    <ul>
+                        <li><a href="case/casea.html">太阳能路灯案例</a></li>
+                        <li><a href="case/casea.html">智慧路灯案例</a></li>
+                        <li><a href="case/casea.html">光伏发电案例</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2">
+                    <h5><a href="about/about.html">关于光谱</a></h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                    <h2 class="h2-white">联系我们</h2>
+                    <ul class="about-us">
+                        <li><span class="iconfont">&#xe603;</span>河北省保定市大学科技园</li>
+                        <li><span class="iconfont">&#xe745;</span>0312-3183665</li>
+                        <li><span class="iconfont">&#xe602;</span>13730299917</li>
+                        <li><span class="iconfont">&#xe612;</span>hbxdlxny@163.com</li>
+                        <li><span class="iconfont">&#xe638;</span>0312-3182296</li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                    <h2 class="h2-white">友情链接</h2>
+                    <ul class="friendlink clearfix">
+                        <li><a href="#">鑫动力</a></li>
+                        <li><a href="#">畅行网络</a></li>
+                        <li><a href="#">欧亚照明</a></li>
+                        <li><a href="#">辉煌阳光</a></li>
+                        <li><a href="#">博凯电子</a></li>
+                        <li><a href="#">中国科技网</a></li>
+                        <li><a href="#">鑫动力</a></li>
+                        <li><a href="#">鑫动力</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                    <h2 class="h2-white">官方微信</h2>
+                    <div class="pull-left text-center wechat" style="margin-right:12px;"><img src="images/wechat.jpg" alt="">
+                        <p>光谱电子</p>
+                    </div>
+                    <div class="pull-left text-center wechat"><img src="images/wechat.jpg" alt="">
+                        <p>光谱电子</p>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © 2008-2019 保定光谱电子有限责任公司&nbsp;&nbsp;&nbsp;<a href="http://beian.miit.gov.cn" style="color: #fff;">备案号：冀ICP备12020645号</a>&nbsp;&nbsp;&nbsp;网站制作：<a href="#" style="color: #ffffff">畅行网络</a></p>
+            </div>
+        </div>
+    </div>
+    <!-- 侧边栏 -->
+    <div class="side visible-lg">
+        <ul>
+            <li>
+                <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=842249139&site=qq&menu=yes">
+                    <div class="sidebox">
+                        <img src="picture/QQ.png" alt="">在线客服
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a target="_blank" href="#">
+                    <div class="sidebox">
+                        <img src="picture/tel.png" alt="">15830029856
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a target="_blank" href="#">
+                    <div class="sidebox">
+                        <img src="picture/wechat.png" alt="">
+                        <div class="side-hover">
+                            <img src="picture/wechat-act.jpg" alt="" width="108px" height="108px">
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li style="border:none;" id="goTop">
+                <a href="#">
+                    <div class="sidebox">
+                        <img src="picture/top.png" alt="">
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <script type="text/javascript" src="js/gotop.js"></script>
+</body>
+
+</html>
